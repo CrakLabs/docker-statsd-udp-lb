@@ -1,0 +1,11 @@
+var balance = require('udp-balancer');
+
+// servers to balance
+var serverList = '{{range service (env "CONSUL_SERVICE_NAME")}}{{.Address}}:{{.Port}},{{end}}';
+serverList = serverList.split(',').slice(0,-1);
+
+// create instance of balancer
+var balancer = balance(serverList);
+
+// bind balancer
+balancer.bind(8125);
