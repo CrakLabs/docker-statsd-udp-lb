@@ -10,11 +10,12 @@ This repository contains Dockerfile of a small UDP load balancer with consul-tem
 
 1. Install [Docker](https://www.docker.com/)
 2. Have a consul server running and a statsd service running
-3. Download image from public [Crakmedia Docker Hub Registry](https://registry.hub.docker.com/repos/crakmedia/) `docker pull crakmedia/statsd-lb`
+3. Download image from public [Crakmedia Docker Hub Registry](https://registry.hub.docker.com/repos/crakmedia/) 
+	`docker pull crakmedia/statsd-lb`
 
 ## Usage
 
-docker run -d -p 8125:8125/udp -e CONSUL_SERVER=X.X.X.X:8500 -e CONSUL_SERVICE_NAME=statsd-8125 crakmedia/statsd-lb
+`docker run -d -p 8125:8125/udp -e CONSUL_SERVER=X.X.X.X:8500 -e CONSUL_SERVICE_NAME=statsd-8125 crakmedia/statsd-lb`
 
 ## Contributing
 
