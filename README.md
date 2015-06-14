@@ -15,7 +15,13 @@ This repository contains Dockerfile of a small UDP load balancer with consul-tem
 
 ## Usage
 
-`docker run -d -p 8125:8125/udp -e CONSUL_SERVER=X.X.X.X:8500 -e CONSUL_SERVICE_NAME=statsd-8125 crakmedia/statsd-lb`
+````
+docker run \
+        -d -p 8125:8125/udp \
+        -e CONSUL_SERVER=X.X.X.X:8500 \
+        -e CONSUL_SERVICE_NAME=statsd-8125 \
+        crakmedia/statsd-lb
+```
 
 ## Contributing
 
