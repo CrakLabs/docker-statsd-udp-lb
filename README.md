@@ -24,10 +24,6 @@ docker run -d -p 8125:8125/udp -e CONSUL_SERVER=X.X.X.X:8500 -e CONSUL_SERVICE_N
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## TODO
-
-- Download consul-template and install it when we build image
-
 ## Credits
 
 - Julien Maitrehenry
