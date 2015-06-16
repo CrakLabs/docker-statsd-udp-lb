@@ -4,7 +4,7 @@ This repository contains Dockerfile of a small UDP load balancer with consul-tem
 
 ## Base Docker Image
 
-[node:0.12](https://registry.hub.docker.com/_/node/)
+[node:0.12-slim](https://registry.hub.docker.com/_/node/)
 
 ## Installation
 
